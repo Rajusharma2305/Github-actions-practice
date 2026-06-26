@@ -1,0 +1,12 @@
+name: pr-check
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print br-branch
+        run: echo "pr check running for branch: ${{ gitub.head_ref }}
+  
